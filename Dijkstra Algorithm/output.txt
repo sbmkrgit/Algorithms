@@ -1,9 +1,0 @@
-
-Distance of node2=10
-Path=2<-1
-Distance of node3=50
-Path=3<-4<-1
-Distance of node4=30
-Path=4<-1
-Distance of node5=60
-Path=5<-3<-4<-1
