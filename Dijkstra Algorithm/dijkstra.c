@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #define INFINITY 9999
 #define MAX 10
 
@@ -18,6 +17,7 @@ int main()
 			fscanf(file, "%d",&G[i][j]);
 
 	fscanf(file, "%d",&u);
+	u=u-1;
 	dijkstra(G,n,u);
 
 	return 0;
@@ -85,14 +85,14 @@ void dijkstra(int G[MAX][MAX],int n,int startnode)
 	for(i=0;i<n;i++)
 		if(i!=startnode)
 		{
-			fprintf(fileOut, "\nDistance of node%d=%d",i,distance[i]);
-			fprintf(fileOut, "\nPath=%d",i);
+			fprintf(fileOut, "\nDistance of node%d=%d",i+1,distance[i]);
+			fprintf(fileOut, "\nPath=%d",i+1);
 
 			j=i;
 			do
 			{
 				j=pred[j];
-				fprintf(fileOut, "<-%d",j);
+				fprintf(fileOut, "<-%d",j+1);
 			}while(j!=startnode);
 	}
 }

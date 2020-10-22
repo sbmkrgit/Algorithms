@@ -1,0 +1,7 @@
+
+Vertex	Distance from Source Vertex
+0 		 0
+1 		 2
+2 		 7
+3 		 4
+4 		 -2
